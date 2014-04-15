@@ -1,4 +1,4 @@
-rule CryptoLocker-Set2_9896
+rule CryptoLocker_rule2
 {
 meta:
 	author = "Christiaan Beek, Christiaan_Beek@McAfee.com"
@@ -23,5 +23,5 @@ strings:
 	$string15 = "FFFF04E3" wide
 	$string16 = "3,31363H3P3m3u3z3"
 condition:
-	16 of them
+	8 of ($string*)
 }

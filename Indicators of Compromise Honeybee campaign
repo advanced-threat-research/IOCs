@@ -1,0 +1,55 @@
+Indicators of Compromise Honeybee campaign
+Reference: 
+
+MITRE ATT&CK techniques Observed during the campaign:
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Modify Existing Service
+Code signing
+File Deletion
+Deobfuscate/Decode files or information
+System information Discovery
+Process Discovery
+Service Execution
+RunDLL32
+Scripting
+Command-Line Interface
+Data from local system
+Automated Exfiltration
+Data Encrypted
+Commonly Used Port
+Bypass User Account Control
+Commonly Used Port
+
+Hashes
++++++++++++++++++++++++++++++++++++++++++++++++++++
+fe32d29fa16b1b71cd27b23a78ee9f6b7791bff3
+f684e15dd2e84bac49ea9b89f9b2646dc32a2477
+1d280a77595a2d2bbd36b9b5d958f99be20f8e06
+19d9573f0b2c2100accd562cc82d57adb12a57ec
+f90a2155ac492c3c2d5e1d83e384e1a734e59cc0
+9b832dda912cce6b23da8abf3881fcf4d2b7ce09
+f3b62fea38cb44e15984d941445d24e6b309bc7b
+66d2cea01b46c3353f4339a986a97b24ed89ee18
+7113aaab61cacb6086c5531a453adf82ca7e7d03
+d41daba0ebfa55d0c769ccfc03dbf6a5221e006a
+25f4819e7948086d46df8de2eeeaa2b9ec6eca8c
+35ab747c15c20da29a14e8b46c07c0448cef4999
+e87de3747d7c12c1eea9e73d3c2fb085b5ae8b42
+0e4a7c0242b98723dc2b8cce1fbf1a43dd025cf0
+bca861a46d60831a3101c50f80a6d626fa99bf16
+01530adb3f947fabebae5d9c04fb69f9000c3cef
+4229896d61a5ad57ed5c247228606ce62c7032d0
+4c7e975f95ebc47423923b855a7530af52977f57
+5a6ad7a1c566204a92dd269312d1156d51e61dc4
+1dc50bfcab2bc80587ac900c03e23afcbe243f64
+003e21b02be3248ff72cc2bfcd05bb161b6a2356
+9b7c3c48bcef6330e3086de592b3223eb198744a
+85e2453b37602429596c9681a8c58a5c6faf8d0c
+
+Domains
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+ftp.byethost31.com
+ftp.byethost11.com
+1113427185.ifastnet.org
+navermail.byethost3.com
+nihon.byethost3.com

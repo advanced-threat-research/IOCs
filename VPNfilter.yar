@@ -37,7 +37,7 @@ rule VPNFilter {
       $s20 = "id-ce-keyUsage" fullword ascii
    condition:
       ( uint16(0) == 0x457f and
-        filesize < 1000KB and ( 8 of them )
+        filesize < 500KB and ( 8 of them )
       ) or ( all of them )
 }
 

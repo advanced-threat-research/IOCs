@@ -17,24 +17,19 @@ rule VPNFilter {
    strings:
       $s1 = "id-at-postalAddress" fullword ascii
       $s2 = "/bin/shell" fullword ascii
-      $s3 = "Usage does not match the extendedKeyUsage extension" fullword ascii
-      $s4 = "The certificate is signed with an unacceptable key (eg bad curve, RSA too short)." fullword ascii
-      $s5 = "Remote I/O error" fullword ascii
-      $s6 = "The CRL is signed with an unacceptable key (eg bad curve, RSA too short)." fullword ascii
-      $s7 = "Usage does not match the keyUsage extension" fullword ascii
-      $s8 = "id-at-postalCode" fullword ascii
-      $s9 = "sha-1WithRSAEncryption" fullword ascii
-      $s10 = "Postal code" fullword ascii
-      $s11 = "vTeY4KZMaUrveEel5tWZC94RSMKgxR6cyE1nBXyTQnDOGbfpNNgBKxyKbINWoOJU" fullword ascii
-      $s12 = "id-ce-extKeyUsage" fullword ascii
-      $s13 = "Unique Identifier" fullword ascii
-      $s14 = "/etc/config/hosts" fullword ascii
-      $s15 = "id-at-uniqueIdentifier" fullword ascii
-      $s16 = "id-kp-serverAuth" fullword ascii
-      $s17 = "Usage does not match the nsCertType extension" fullword ascii
-      $s18 = "The certificate is signed with an unacceptable PK alg (eg RSA vs ECDSA)." fullword ascii
-      $s19 = "%s%-18s: %d bits" fullword ascii
-      $s20 = "id-ce-keyUsage" fullword ascii
+      $s3 = "/DZrtenNLQNiTrM9AM+vdqBpVoNq0qjU51Bx5rU2BXcFbXvI5MT9TNUhXwIDAQAB" fullword ascii
+      $s4 = "Usage does not match the keyUsage extension" fullword ascii
+      $s5 = "id-at-postalCode" fullword ascii
+      $s6 = "vTeY4KZMaUrveEel5tWZC94RSMKgxR6cyE1nBXyTQnDOGbfpNNgBKxyKbINWoOJU" fullword ascii
+      $s7 = "id-ce-extKeyUsage" fullword ascii
+      $s8 = "/f8wYwYDVR0jBFwwWoAUtFrkpbPe0lL2udWmlQ/rPrzH/f+hP6Q9MDsxCzAJBgNV" fullword ascii
+      $s9 = "/etc/config/hosts" fullword ascii
+      $s10 = "%s%-18s: %d bits" fullword ascii
+      $s11 = "id-ce-keyUsage" fullword ascii
+      $s12 = "Machine is not on the network" fullword ascii
+      $s13 = "No XENIX semaphores available" fullword ascii
+      $s14 = "No CSI structure available" fullword ascii
+      $s15 = ""Name not unique on network" fullword ascii
    condition:
       ( uint16(0) == 0x457f and
         filesize < 500KB and ( 8 of them )

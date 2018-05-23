@@ -29,7 +29,7 @@ rule VPNFilter {
       $s12 = "Machine is not on the network" fullword ascii
       $s13 = "No XENIX semaphores available" fullword ascii
       $s14 = "No CSI structure available" fullword ascii
-      $s15 = ""Name not unique on network" fullword ascii
+      $s15 = "Name not unique on network" fullword ascii
    condition:
       ( uint16(0) == 0x457f and
         filesize < 500KB and ( 8 of them )

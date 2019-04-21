@@ -1,0 +1,29 @@
+Indicators of Compromise Hidden Cobra March 2018 campaign
+
+Reference: https://securingtomorrow.mcafee.com/mcafee-labs/hidden-cobra-targets-turkish-financial-sector-new-bankshot-implant/
+
+MITRE ATT&CK techniques
+o	Exfiltration over command and control channel
+o	Commonly used port
+o	Command-line interface
+o	Service execution
+o	Automated collection
+o	Data from local system
+o	Process discovery
+o	System time discovery
+o	Credential dumping
+o	Exploitation of vulnerability
+o	Process injection
+o	File deletion
+
+Hashes
+650b7d25f4ed87490f8467eb48e0443fb244a8c4
+65e7d2338735ec04fd9692d020298e5a7953fd8d
+166e8c643a4db0df6ffd6e3ab536b3de9edc9fb7
+a2e966edee45b30bb6bb5c978e55833eec169098
+
+Domains
+www.530hr[dot]com/data/common.php
+www.028xmz[dot]com/include/common.php
+168wangpi[dot]com/include/charset.php
+Falcancoin[dot]io

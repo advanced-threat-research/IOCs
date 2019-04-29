@@ -1,0 +1,51 @@
+Expert Rules LockerGoga
+Reference: https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/lockergoga-ransomware-family-used-in-targeted-attacks/
+
+Expert Rules
+
+The following expert rules can be used in Endpoint Security to block the malware from spreading. These rules are aggressive and may cause false positives, so make sure they are removed once the environment is cleaned:
+
+Rule {
+Process {
+
+Include OBJECT_NAME { -v “SYSTEM:REMOTE” }
+
+}
+
+Target {
+
+Match FILE {
+
+Include OBJECT_NAME { -v “c:\\windows\\temp\\*.exe” }
+
+Include OBJECT_NAME { -v “c:\\windows\\temp\\*.bat” }
+
+Include -access “CREATE”
+
+}
+
+}
+
+}
+
+Rule {
+
+Process {
+
+Include OBJECT_NAME { -v “WmiPrvSE.exe” }
+
+}
+
+Target {
+
+Match PROCESS {
+
+Include OBJECT_NAME { -v “cmd.exe”}
+
+Include -access “CREATE”
+
+}
+
+}
+
+}

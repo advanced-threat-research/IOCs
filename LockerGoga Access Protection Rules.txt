@@ -1,0 +1,16 @@
+LockerGoga Access Protection Rules:
+Reference: https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/lockergoga-ransomware-family-used-in-targeted-attacks/
+
+Customers can also add Access Protection rules matching these characteristics: Prevent Creation\Execution of:
+
+c:\windows\temp\x??.bat
+c:\windows\temp\kill.bat
+c:\windows\temp\taskhost.exe
+Prevent execution of binaries signed with SN:
+
+C=GB, PostalCode=DT3 4DD, S=WEYMOUTH, L=WEYMOUTH, STREET=16 Australia Road Chickerell,
+O=MIKL LIMITED, CN=MIKL LIMITED
+C=GB, PostalCode=WC2H 9JQ, S=LONDON, L=LONDON, STREET=71-75 Shelton Street Covent
+Garden, O=ALISA LTD, CN=ALISA LTD
+C=GB, PostalCode=EC1V 2NX, S=LONDON, L=LONDON, STREET=Kemp House 160 City Road,
+O=KITTY’S LTD, CN=KITTY’S LTD

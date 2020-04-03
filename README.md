@@ -1,6 +1,6 @@
 ############ IOCs ##############
 
-Copyright © McAfee 2012-2019
+Copyright © McAfee 2020
 
 Here are indicators of compromise (IOCs) from our various blogs & investigations. We believe in sharing to fight malware wherever it might be.
 
